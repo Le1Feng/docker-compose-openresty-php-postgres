@@ -24,3 +24,7 @@ services:
     volumes:
       - ./data/postgres:/var/lib/postgresql/data
       - ./run:/var/run/postgresql
+    environment:
+      POSTGRES_DB: 'postgres_db'
+      POSTGRES_USER: 'postgres'
+      POSTGRES_PASS: 'change_your_pass'
